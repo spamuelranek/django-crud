@@ -1,0 +1,15 @@
+{% extends "_base.html"%}
+
+{% block main_content %}
+<h3>Delete {{snack.title}}</h3>
+<form action="" method = "POST">
+  {% csrf_token %}
+  <h4>Do you really wish to terminate the existence of this snack?</h1>
+  <p>You are all that stands between the snack and oblivion. Can you accept that responsiblity?</p>
+
+  <input type="submit" value = "We all return to stardust as some point">
+
+</form>
+
+
+{% endblock main_content %}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snacks DataBase of the Future</title>
+</head>
+<body>
+  <header>
+    <h1>Bow Before the Mighty Taste of THINGS</h1>
+    <h4><a href="{% url 'home' %}">Home</a></h4>
+    <h4><a href="{% url 'snack_list' %}">Snack List</a></h4>
+  </header>
+  <p>----------------------------------------------</p>
+  <main>
+    {% block main_content %}
+    {% endblock main_content%}
+  </main>
+  <p>----------------------------------------------</p>
+  <footer></footer>
+</body>
+</html>
